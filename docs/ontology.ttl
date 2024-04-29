@@ -1,0 +1,606 @@
+@prefix : <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology.#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology.#> .
+
+<http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology.> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#dateTime
+xsd:dateTime owl:equivalentClass xsd:date .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./has_aircraft
+<http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./has_aircraft> rdf:type owl:ObjectProperty ;
+                                                                                                         rdfs:domain <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./Flight> ;
+                                                                                                         rdfs:range <https://dbpedia.org/page/Aircraft> ;
+                                                                                                         rdfs:comment "The flight aircarft." ;
+                                                                                                         rdfs:label "has_aircraft" .
+
+
+###  http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./has_airline
+<http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./has_airline> rdf:type owl:ObjectProperty ;
+                                                                                                        rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                                                        rdfs:domain <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./Flight> ;
+                                                                                                        rdfs:range <https://dbpedia.org/page/Airline> .
+
+
+###  http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./has_country
+<http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./has_country> rdf:type owl:ObjectProperty ;
+                                                                                                        rdfs:domain <https://dbpedia.org/page/Passenger> ;
+                                                                                                        rdfs:range <https://dbpedia.org/page/Country> ;
+                                                                                                        rdfs:comment "The country of the passenger" ;
+                                                                                                        rdfs:label "has_country" .
+
+
+###  http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./has_destination
+<http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./has_destination> rdf:type owl:ObjectProperty ;
+                                                                                                            rdfs:domain <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./Flight> ;
+                                                                                                            rdfs:range <https://dbpedia.org/page/City> ;
+                                                                                                            rdfs:comment "The flight destination city" ;
+                                                                                                            rdfs:label "has_destination" .
+
+
+###  http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./has_flight
+<http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./has_flight> rdf:type owl:ObjectProperty ;
+                                                                                                       rdfs:domain <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./FlightReview> ;
+                                                                                                       rdfs:range <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./Flight> ;
+                                                                                                       rdfs:comment "The flight of the review." ;
+                                                                                                       rdfs:label "has_flight" .
+
+
+###  http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./has_origin
+<http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./has_origin> rdf:type owl:ObjectProperty ;
+                                                                                                       rdfs:domain <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./Flight> ;
+                                                                                                       rdfs:range <https://dbpedia.org/page/City> ;
+                                                                                                       rdfs:comment "The flight origin city" ;
+                                                                                                       rdfs:label "has_origin" .
+
+
+###  http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./has_seat_type
+<http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./has_seat_type> rdf:type owl:ObjectProperty ;
+                                                                                                          rdfs:domain <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./Flight> ;
+                                                                                                          rdfs:range <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./SeatType> ;
+                                                                                                          rdfs:comment "The seat type of the flight" ;
+                                                                                                          rdfs:label "has_seat_type" .
+
+
+###  http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./has_traveller
+<http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./has_traveller> rdf:type owl:ObjectProperty ;
+                                                                                                          rdfs:domain <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./FlightReview> ;
+                                                                                                          rdfs:range <https://dbpedia.org/page/Passenger> ;
+                                                                                                          rdfs:comment "The traveller of the review" ;
+                                                                                                          rdfs:label "has_traveller" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./has_comment
+<http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./has_comment> rdf:type owl:DatatypeProperty ;
+                                                                                                        rdfs:domain <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./FlightReview> ;
+                                                                                                        rdfs:range xsd:string ;
+                                                                                                        rdfs:comment "The comment of a review." ;
+                                                                                                        rdfs:label "has_comment" .
+
+
+###  http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./has_flight_date
+<http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./has_flight_date> rdf:type owl:DatatypeProperty ;
+                                                                                                            rdfs:domain <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./Flight> ;
+                                                                                                            rdfs:range xsd:date ;
+                                                                                                            rdfs:comment "The date of the flight" ;
+                                                                                                            rdfs:label "has_flight_date" .
+
+
+###  http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./has_rating
+<http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./has_rating> rdf:type owl:DatatypeProperty ;
+                                                                                                       rdfs:domain <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./FlightReview> ;
+                                                                                                       rdfs:range xsd:integer ;
+                                                                                                       rdfs:comment "The overall rating of a review." ;
+                                                                                                       rdfs:label "has_rating" .
+
+
+###  http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./has_review_date
+<http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./has_review_date> rdf:type owl:DatatypeProperty ;
+                                                                                                            rdfs:domain <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./FlightReview> ;
+                                                                                                            rdfs:range xsd:date ;
+                                                                                                            rdfs:comment "The publciation date of the review." ,
+                                                                                                                         "has_review_date" .
+
+
+###  http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./has_tittle
+<http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./has_tittle> rdf:type owl:DatatypeProperty ;
+                                                                                                       rdfs:domain <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./FlightReview> ;
+                                                                                                       rdfs:range xsd:string ;
+                                                                                                       rdfs:comment "The tittle of a review." ;
+                                                                                                       rdfs:label "has_tittle" .
+
+
+###  http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./is_recommended
+<http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./is_recommended> rdf:type owl:DatatypeProperty ;
+                                                                                                           rdfs:domain <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./FlightReview> ;
+                                                                                                           rdfs:range xsd:boolean ;
+                                                                                                           rdfs:comment "True if the reviewer recommends the flight." ;
+                                                                                                           rdfs:label "is_recommended" .
+
+
+###  http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./is_verified
+<http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./is_verified> rdf:type owl:DatatypeProperty ;
+                                                                                                        rdfs:domain <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./FlightReview> ;
+                                                                                                        rdfs:range xsd:boolean ;
+                                                                                                        rdfs:comment "True if the flight of the review is verified." ;
+                                                                                                        rdfs:label "is_verified" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./BusinessClass
+<http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./BusinessClass> rdf:type owl:Class ;
+                                                                                                          rdfs:subClassOf <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./SeatType> ;
+                                                                                                          rdfs:comment "Business class type of seat." ;
+                                                                                                          rdfs:label "BusinessClass" .
+
+
+###  http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./BusinessTraveller
+<http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./BusinessTraveller> rdf:type owl:Class ;
+                                                                                                              rdfs:subClassOf <https://dbpedia.org/page/Passenger> ;
+                                                                                                              rdfs:comment "Business traveller" ;
+                                                                                                              rdfs:label "BusinessTraveller" .
+
+
+###  http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./CoupleLeisureTraveller
+<http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./CoupleLeisureTraveller> rdf:type owl:Class ;
+                                                                                                                   rdfs:subClassOf <https://dbpedia.org/page/Passenger> ;
+                                                                                                                   rdfs:comment "Couple leisure traveller" ;
+                                                                                                                   rdfs:label "CoupleLeisureTraveller" .
+
+
+###  http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./EconomyClass
+<http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./EconomyClass> rdf:type owl:Class ;
+                                                                                                         rdfs:subClassOf <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./SeatType> ;
+                                                                                                         rdfs:comment "Economy  class type of seat" ;
+                                                                                                         rdfs:label "EconomyClass" .
+
+
+###  http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./ExcellentReview
+<http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./ExcellentReview> rdf:type owl:Class ;
+                                                                                                            rdfs:subClassOf <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./FlightReview> ;
+                                                                                                            rdfs:comment "A review with a raing equal or greater than 8." ;
+                                                                                                            rdfs:label "ExcellentReview" .
+
+
+###  http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./FamilyLeisureTraveller
+<http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./FamilyLeisureTraveller> rdf:type owl:Class ;
+                                                                                                                   rdfs:subClassOf <https://dbpedia.org/page/Passenger> ;
+                                                                                                                   rdfs:comment "Family leisure traveller" ;
+                                                                                                                   rdfs:label "FamilyLeisureTraveller" .
+
+
+###  http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./FirstClass
+<http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./FirstClass> rdf:type owl:Class ;
+                                                                                                       rdfs:subClassOf <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./SeatType> ;
+                                                                                                       rdfs:comment "First class type of seat." ;
+                                                                                                       rdfs:label "FirstClass" .
+
+
+###  http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./Flight
+<http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./Flight> rdf:type owl:Class ;
+                                                                                                   rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                                                                     owl:onProperty <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./has_destination> ;
+                                                                                                                     owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                                     owl:onClass <https://dbpedia.org/page/City>
+                                                                                                                   ] ,
+                                                                                                                   [ rdf:type owl:Restriction ;
+                                                                                                                     owl:onProperty <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./has_origin> ;
+                                                                                                                     owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                                     owl:onClass <https://dbpedia.org/page/City>
+                                                                                                                   ] ;
+                                                                                                   rdfs:comment "The class of Flight, represent the flight of a passenger" ;
+                                                                                                   rdfs:label "Flight" .
+
+
+###  http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./FlightReview
+<http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./FlightReview> rdf:type owl:Class ;
+                                                                                                         rdfs:comment "The class of a Flight Review" ;
+                                                                                                         rdfs:label "FlightReview" .
+
+
+###  http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./GoodReview
+<http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./GoodReview> rdf:type owl:Class ;
+                                                                                                       rdfs:subClassOf <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./FlightReview> ;
+                                                                                                       rdfs:comment "A review with a rating between 6 and 8" ;
+                                                                                                       rdfs:label "GoodReview" .
+
+
+###  http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./LowReview
+<http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./LowReview> rdf:type owl:Class ;
+                                                                                                      rdfs:subClassOf <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./FlightReview> ;
+                                                                                                      rdfs:comment "A review with a rating less than 4." ;
+                                                                                                      rdfs:label "LowReview" .
+
+
+###  http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./ModerateReview
+<http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./ModerateReview> rdf:type owl:Class ;
+                                                                                                           rdfs:subClassOf <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./FlightReview> ;
+                                                                                                           rdfs:comment "A review with a rating between 4 and 6." ;
+                                                                                                           rdfs:label "ModerateReview" .
+
+
+###  http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./PremiumEconomy
+<http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./PremiumEconomy> rdf:type owl:Class ;
+                                                                                                           rdfs:subClassOf <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./SeatType> ;
+                                                                                                           rdfs:comment "Premium economy type of seat." ;
+                                                                                                           rdfs:label "PremiumEconomy" .
+
+
+###  http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./SeatType
+<http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./SeatType> rdf:type owl:Class ;
+                                                                                                     rdfs:comment "Represents the general category of seating available on a flight." ;
+                                                                                                     rdfs:label "SeatType" .
+
+
+###  http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./SoloLeisureTraveller
+<http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./SoloLeisureTraveller> rdf:type owl:Class ;
+                                                                                                                 rdfs:subClassOf <https://dbpedia.org/page/Passenger> ;
+                                                                                                                 rdfs:comment "Solo leisure traveler" ;
+                                                                                                                 rdfs:label "SoloLeisureTraveller" .
+
+
+###  https://dbpedia.org/page/Aircraft
+<https://dbpedia.org/page/Aircraft> rdf:type owl:Class ;
+                                    rdfs:comment "The class of Aircraft" ;
+                                    rdfs:label "Aircraft" .
+
+
+###  https://dbpedia.org/page/Airline
+<https://dbpedia.org/page/Airline> rdf:type owl:Class ;
+                                   rdfs:comment "The class of Airline" ;
+                                   rdfs:label "Airline" .
+
+
+###  https://dbpedia.org/page/City
+<https://dbpedia.org/page/City> rdf:type owl:Class ;
+                                rdfs:comment "The class of City" ;
+                                rdfs:label "City" .
+
+
+###  https://dbpedia.org/page/Country
+<https://dbpedia.org/page/Country> rdf:type owl:Class ;
+                                   rdfs:comment "The class of a Country" ;
+                                   rdfs:label "Country" .
+
+
+###  https://dbpedia.org/page/Passenger
+<https://dbpedia.org/page/Passenger> rdf:type owl:Class ;
+                                     rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                       owl:onProperty <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./has_country> ;
+                                                       owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                       owl:onClass <https://dbpedia.org/page/City>
+                                                     ] ;
+                                     rdfs:comment "The class of Passenger" ;
+                                     rdfs:label "Passenger" .
+
+
+###  https://dbpedia.org/page/Category:Airbus_aircraft
+<https://dbpedia.org/page/Category:Airbus_aircraft> rdf:type owl:Class ;
+                                                    rdfs:subClassOf <https://dbpedia.org/page/Aircraft> ;
+                                                    rdfs:comment "The aircrafts from Airbus" ;
+                                                    rdfs:label "Airbus_aricraft" .
+
+
+###  https://dbpedia.org/page/Category:Boeing_aircraft
+<https://dbpedia.org/page/Category:Boeing_aircraft> rdf:type owl:Class ;
+                                                    rdfs:subClassOf <https://dbpedia.org/page/Aircraft> ;
+                                                    rdfs:comment "The aircrafts from Boeing" ;
+                                                    rdfs:label "Boeing_aircraft" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./A380
+<http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./A380> rdf:type owl:NamedIndividual ,
+                                                                                                          <https://dbpedia.org/page/Category:Airbus_aircraft> .
+
+
+###  http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./Australia
+<http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./Australia> rdf:type owl:NamedIndividual ,
+                                                                                                               <https://dbpedia.org/page/Country> .
+
+
+###  http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./Doha
+<http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./Doha> rdf:type owl:NamedIndividual ,
+                                                                                                          <https://dbpedia.org/page/City> .
+
+
+###  http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./EconomyClassSeat
+<http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./EconomyClassSeat> rdf:type owl:NamedIndividual ,
+                                                                                                                      <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./EconomyClass> .
+
+
+###  http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./Flight1
+<http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./Flight1> rdf:type owl:NamedIndividual ,
+                                                                                                             <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./Flight> ;
+                                                                                                    <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./has_aircraft> <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./A380> ;
+                                                                                                    <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./has_airline> <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./Qatar_Airways> ;
+                                                                                                    <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./has_destination> <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./Perth> ;
+                                                                                                    <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./has_origin> <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./Doha> ;
+                                                                                                    <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./has_seat_type> <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./EconomyClassSeat> ;
+                                                                                                    <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./has_flight_date> "2023-11-01"^^xsd:date .
+
+
+###  http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./Perth
+<http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./Perth> rdf:type owl:NamedIndividual ,
+                                                                                                           <https://dbpedia.org/page/City> .
+
+
+###  http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./Qatar_Airways
+<http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./Qatar_Airways> rdf:type owl:NamedIndividual ,
+                                                                                                                   <https://dbpedia.org/page/Airline> .
+
+
+###  http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./Review2
+<http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./Review2> rdf:type owl:NamedIndividual ,
+                                                                                                             <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./FlightReview> ;
+                                                                                                    <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./has_flight> <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./Flight1> ;
+                                                                                                    <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./has_traveller> <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./Wayne_Burgess> ;
+                                                                                                    <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./has_comment> "I have sent 5 emails and have only received 2 automatic response emails after initiating our complaint 10 weeks ago. I have sent all of the relevant documentation to support our claim for a refund. Our group of 3 booked adjoining Exit Row seats on the Upper Deck of an A380 from Doha to Perth after a connecting flight from Amman. We paid for our Exit Row seats on August 22 2023 and received email confirmation that day. What was a shock to us is that when we were at Amman airport we got our tickets for the second leg, from Doha to Perth, we saw that we had been seats on the lower deck. We said this was wrong and showed our August confirmation for seats 30 A, B and C on the upper deck. We were told by Qatar Airways staff in Amman that it could only be fixed up in Doha. We were also told that the reason was that the plane had been changed from an A380 (which was not correct) . Our connecting flight from Amman to Doha was not only cancelled but deleted altogether meaning we had a 10.5 hour transit instead of the original 2.5 hours. Then at the Boarding Gate in Amman we were informed that there were 2 Exit Row seats available in the Upper Deck and that these had been put on hold for us and to see the Qatar Ground staff in Doha. We were in a queue for almost an hour at the Qatar Service Desk in Doha. I asked how the seats we had booked and paid extra for in August, and provided emails and a hard copy to verify this, were no longer available for us? We were told that it was a system error. There was no apology at all for the system error. We were further disappointed to find out that the 2 Exit Row seats on the Upper Deck that we had been told by staff at the boarding Gate at Amman had been â€œreservedâ€ were not actually retained for us and that only 1 Exit Row seat was available. Understandably we were not happy that we did not receive the Exit Row seats that we had booked and paid for more than 3 months prior. Through no fault of our own we were victims of a Qatar Airways system error. We did not complain to the flight attendants on the Doha to Perth flight as we understood that they had no control over the seat allocation. However, we politely asked the people in seats 30A and 30B, that we had paid for in August, when they had purchased their seats and were informed that they had done so about 2 weeks prior. I chose Exit Row seats on the Upper Deck because of the extra space and the cabin configuration of 2 by 4 by 2 seats and because my wife and I would be seated next to each other and the other member of our group would be in the next available Exit Row seat. Instead of all being seated next to each other in Exit Row seats we were split up and certainly didnâ€™t get what we paid for. Plus all of the wasted time trying unsuccessfully in Amman and then at the Transit Desk in Doha to sort out the error created by Qatar Airways assigning our seats to someone else. It is bad enough that we didnâ€™t get 2 of the Exit Row seats that we had paid for that were allocated to other people who booked well after us. What is worse is that there has been no attempt by Qatar Airways to address our complaint let alone issue the refund to which we are entitled. Our complaint isnâ€™t complex." ;
+                                                                                                    <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./has_rating> 1 ;
+                                                                                                    <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./has_review_date> "2024-02-29"^^xsd:date ;
+                                                                                                    <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./has_tittle> "\"no attempt to address our complaint\"" ;
+                                                                                                    <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./is_recommended> "false"^^xsd:boolean ;
+                                                                                                    <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./is_verified> "true"^^xsd:boolean .
+
+
+###  http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./Wayne_Burgess
+<http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./Wayne_Burgess> rdf:type owl:NamedIndividual ,
+                                                                                                                   <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./BusinessTraveller> ;
+                                                                                                          <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./has_country> <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./Australia> .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./BusinessClass>
+                <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./EconomyClass>
+                <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./FirstClass>
+                <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./PremiumEconomy>
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./BusinessTraveller>
+                <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./CoupleLeisureTraveller>
+                <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./FamilyLeisureTraveller>
+                <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./SoloLeisureTraveller>
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./ExcellentReview>
+                <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./GoodReview>
+                <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./LowReview>
+                <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./ModerateReview>
+              )
+] .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+<http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./o> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./r> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "S3" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./FlightReview> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./o>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./has_rating> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./o> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./r>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThanOrEqual> ;
+                                                                             <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                          rdf:first <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./r> ;
+                                                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first 4 ;
+                                                                                                                                     rdf:rest rdf:nil
+                                                                                                                                   ]
+                                                                                                                        ]
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThan> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./r> ;
+                                                                                                                                     rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                                rdf:first 6 ;
+                                                                                                                                                rdf:rest rdf:nil
+                                                                                                                                              ]
+                                                                                                                                   ]
+                                                                                      ] ;
+                                                                            rdf:rest rdf:nil
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./ModerateReview> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./o>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "S2" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./FlightReview> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./o>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./has_rating> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./o> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./r>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThanOrEqual> ;
+                                                                             <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                          rdf:first <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./r> ;
+                                                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first 6 ;
+                                                                                                                                     rdf:rest rdf:nil
+                                                                                                                                   ]
+                                                                                                                        ]
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThan> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./r> ;
+                                                                                                                                     rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                                rdf:first 8 ;
+                                                                                                                                                rdf:rest rdf:nil
+                                                                                                                                              ]
+                                                                                                                                   ]
+                                                                                      ] ;
+                                                                            rdf:rest rdf:nil
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./GoodReview> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./o>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "S4" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./FlightReview> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./o>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./has_rating> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./o> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./r>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThan> ;
+                                                                             <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                          rdf:first <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./r> ;
+                                                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first 6 ;
+                                                                                                                                     rdf:rest rdf:nil
+                                                                                                                                   ]
+                                                                                                                        ]
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./LowReview> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./o>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "S1" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./FlightReview> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./o>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./has_rating> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./o> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./r>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThanOrEqual> ;
+                                                                             <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                          rdf:first <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./r> ;
+                                                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first 8 ;
+                                                                                                                                     rdf:rest rdf:nil
+                                                                                                                                   ]
+                                                                                                                        ]
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./ExcellentReview> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./o>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

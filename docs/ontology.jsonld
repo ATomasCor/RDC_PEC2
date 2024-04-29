@@ -1,0 +1,997 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://dbpedia.org/page/City"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./has_destination"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid14",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./ExcellentReview"
+    }, {
+      "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./GoodReview"
+    }, {
+      "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./LowReview"
+    }, {
+      "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./ModerateReview"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid19",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "S3"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid31"
+    }, {
+      "@id" : "_:genid29"
+    }, {
+      "@id" : "_:genid25"
+    }, {
+      "@id" : "_:genid21"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid33"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://dbpedia.org/page/City"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./has_origin"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid21",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./r"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "6"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#lessThan"
+  } ]
+}, {
+  "@id" : "_:genid25",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./r"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "4"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"
+  } ]
+}, {
+  "@id" : "_:genid29",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./o"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./r"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./has_rating"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://dbpedia.org/page/City"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./has_country"
+  } ]
+}, {
+  "@id" : "_:genid31",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./o"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./FlightReview"
+  } ]
+}, {
+  "@id" : "_:genid33",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./o"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./ModerateReview"
+  } ]
+}, {
+  "@id" : "_:genid34",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "S2"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid46"
+    }, {
+      "@id" : "_:genid44"
+    }, {
+      "@id" : "_:genid40"
+    }, {
+      "@id" : "_:genid36"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid48"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid36",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./r"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "8"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#lessThan"
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./BusinessClass"
+    }, {
+      "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./EconomyClass"
+    }, {
+      "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./FirstClass"
+    }, {
+      "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./PremiumEconomy"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid40",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./r"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "6"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"
+  } ]
+}, {
+  "@id" : "_:genid44",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./o"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./r"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./has_rating"
+  } ]
+}, {
+  "@id" : "_:genid46",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./o"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./FlightReview"
+  } ]
+}, {
+  "@id" : "_:genid48",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./o"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./GoodReview"
+  } ]
+}, {
+  "@id" : "_:genid49",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "S4"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid57"
+    }, {
+      "@id" : "_:genid55"
+    }, {
+      "@id" : "_:genid51"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid59"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid51",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./r"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "6"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#lessThan"
+  } ]
+}, {
+  "@id" : "_:genid55",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./o"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./r"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./has_rating"
+  } ]
+}, {
+  "@id" : "_:genid57",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./o"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./FlightReview"
+  } ]
+}, {
+  "@id" : "_:genid59",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./o"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./LowReview"
+  } ]
+}, {
+  "@id" : "_:genid60",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "S1"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid68"
+    }, {
+      "@id" : "_:genid66"
+    }, {
+      "@id" : "_:genid62"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid70"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid62",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./r"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "8"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"
+  } ]
+}, {
+  "@id" : "_:genid66",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./o"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./r"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./has_rating"
+  } ]
+}, {
+  "@id" : "_:genid68",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./o"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./FlightReview"
+  } ]
+}, {
+  "@id" : "_:genid70",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./o"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./ExcellentReview"
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./BusinessTraveller"
+    }, {
+      "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./CoupleLeisureTraveller"
+    }, {
+      "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./FamilyLeisureTraveller"
+    }, {
+      "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./SoloLeisureTraveller"
+    } ]
+  } ]
+}, {
+  "@id" : "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology.",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./A380",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://dbpedia.org/page/Category:Airbus_aircraft"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./Australia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://dbpedia.org/page/Country"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./BusinessClass",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Business class type of seat."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "BusinessClass"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./SeatType"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./BusinessTraveller",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Business traveller"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "BusinessTraveller"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://dbpedia.org/page/Passenger"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./CoupleLeisureTraveller",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Couple leisure traveller"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "CoupleLeisureTraveller"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://dbpedia.org/page/Passenger"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./Doha",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://dbpedia.org/page/City"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./EconomyClass",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Economy  class type of seat"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "EconomyClass"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./SeatType"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./EconomyClassSeat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./EconomyClass"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./ExcellentReview",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A review with a raing equal or greater than 8."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ExcellentReview"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./FlightReview"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./FamilyLeisureTraveller",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Family leisure traveller"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "FamilyLeisureTraveller"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://dbpedia.org/page/Passenger"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./FirstClass",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "First class type of seat."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "FirstClass"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./SeatType"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./Flight",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The class of Flight, represent the flight of a passenger"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid1"
+  }, {
+    "@id" : "_:genid2"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./Flight1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./has_aircraft" : [ {
+    "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./A380"
+  } ],
+  "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./has_airline" : [ {
+    "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./Qatar_Airways"
+  } ],
+  "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./has_destination" : [ {
+    "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./Perth"
+  } ],
+  "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./has_flight_date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2023-11-01"
+  } ],
+  "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./has_origin" : [ {
+    "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./Doha"
+  } ],
+  "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./has_seat_type" : [ {
+    "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./EconomyClassSeat"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./Flight"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./FlightReview",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The class of a Flight Review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "FlightReview"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./GoodReview",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A review with a rating between 6 and 8"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "GoodReview"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./FlightReview"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./LowReview",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A review with a rating less than 4."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "LowReview"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./FlightReview"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./ModerateReview",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A review with a rating between 4 and 6."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ModerateReview"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./FlightReview"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./Perth",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://dbpedia.org/page/City"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./PremiumEconomy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Premium economy type of seat."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "PremiumEconomy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./SeatType"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./Qatar_Airways",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://dbpedia.org/page/Airline"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./Review2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./has_comment" : [ {
+    "@value" : "I have sent 5 emails and have only received 2 automatic response emails after initiating our complaint 10 weeks ago. I have sent all of the relevant documentation to support our claim for a refund. Our group of 3 booked adjoining Exit Row seats on the Upper Deck of an A380 from Doha to Perth after a connecting flight from Amman. We paid for our Exit Row seats on August 22 2023 and received email confirmation that day. What was a shock to us is that when we were at Amman airport we got our tickets for the second leg, from Doha to Perth, we saw that we had been seats on the lower deck. We said this was wrong and showed our August confirmation for seats 30 A, B and C on the upper deck. We were told by Qatar Airways staff in Amman that it could only be fixed up in Doha. We were also told that the reason was that the plane had been changed from an A380 (which was not correct) . Our connecting flight from Amman to Doha was not only cancelled but deleted altogether meaning we had a 10.5 hour transit instead of the original 2.5 hours. Then at the Boarding Gate in Amman we were informed that there were 2 Exit Row seats available in the Upper Deck and that these had been put on hold for us and to see the Qatar Ground staff in Doha. We were in a queue for almost an hour at the Qatar Service Desk in Doha. I asked how the seats we had booked and paid extra for in August, and provided emails and a hard copy to verify this, were no longer available for us? We were told that it was a system error. There was no apology at all for the system error. We were further disappointed to find out that the 2 Exit Row seats on the Upper Deck that we had been told by staff at the boarding Gate at Amman had been â€œreservedâ€ were not actually retained for us and that only 1 Exit Row seat was available. Understandably we were not happy that we did not receive the Exit Row seats that we had booked and paid for more than 3 months prior. Through no fault of our own we were victims of a Qatar Airways system error. We did not complain to the flight attendants on the Doha to Perth flight as we understood that they had no control over the seat allocation. However, we politely asked the people in seats 30A and 30B, that we had paid for in August, when they had purchased their seats and were informed that they had done so about 2 weeks prior. I chose Exit Row seats on the Upper Deck because of the extra space and the cabin configuration of 2 by 4 by 2 seats and because my wife and I would be seated next to each other and the other member of our group would be in the next available Exit Row seat. Instead of all being seated next to each other in Exit Row seats we were split up and certainly didnâ€™t get what we paid for. Plus all of the wasted time trying unsuccessfully in Amman and then at the Transit Desk in Doha to sort out the error created by Qatar Airways assigning our seats to someone else. It is bad enough that we didnâ€™t get 2 of the Exit Row seats that we had paid for that were allocated to other people who booked well after us. What is worse is that there has been no attempt by Qatar Airways to address our complaint let alone issue the refund to which we are entitled. Our complaint isnâ€™t complex."
+  } ],
+  "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./has_flight" : [ {
+    "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./Flight1"
+  } ],
+  "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./has_rating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ],
+  "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./has_review_date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-02-29"
+  } ],
+  "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./has_tittle" : [ {
+    "@value" : "\"no attempt to address our complaint\""
+  } ],
+  "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./has_traveller" : [ {
+    "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./Wayne_Burgess"
+  } ],
+  "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./is_recommended" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./is_verified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./FlightReview"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./SeatType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Represents the general category of seating available on a flight."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "SeatType"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./SoloLeisureTraveller",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Solo leisure traveler"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "SoloLeisureTraveller"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://dbpedia.org/page/Passenger"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./Wayne_Burgess",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./has_country" : [ {
+    "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./Australia"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./BusinessTraveller"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./has_aircraft",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The flight aircarft."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./Flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has_aircraft"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://dbpedia.org/page/Aircraft"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./has_airline",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./Flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://dbpedia.org/page/Airline"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./has_comment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The comment of a review."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./FlightReview"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has_comment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./has_country",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The country of the passenger"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://dbpedia.org/page/Passenger"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has_country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://dbpedia.org/page/Country"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./has_destination",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The flight destination city"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./Flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has_destination"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://dbpedia.org/page/City"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./has_flight",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The flight of the review."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./FlightReview"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has_flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./Flight"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./has_flight_date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The date of the flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./Flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has_flight_date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#date"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./has_origin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The flight origin city"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./Flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has_origin"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://dbpedia.org/page/City"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./has_rating",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The overall rating of a review."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./FlightReview"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has_rating"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./has_review_date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The publciation date of the review."
+  }, {
+    "@value" : "has_review_date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./FlightReview"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#date"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./has_seat_type",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The seat type of the flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./Flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has_seat_type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./SeatType"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./has_tittle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The tittle of a review."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./FlightReview"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has_tittle"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./has_traveller",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The traveller of the review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./FlightReview"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has_traveller"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://dbpedia.org/page/Passenger"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./is_recommended",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "True if the reviewer recommends the flight."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./FlightReview"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "is_recommended"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./is_verified",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "True if the flight of the review is verified."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./FlightReview"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "is_verified"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./o",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./r",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#date",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#dateTime",
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#date"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2003/11/swrlb#greaterThanOrEqual",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Builtin" ]
+}, {
+  "@id" : "http://www.w3.org/2003/11/swrlb#lessThan",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Builtin" ]
+}, {
+  "@id" : "https://dbpedia.org/page/Aircraft",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The class of Aircraft"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Aircraft"
+  } ]
+}, {
+  "@id" : "https://dbpedia.org/page/Airline",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The class of Airline"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Airline"
+  } ]
+}, {
+  "@id" : "https://dbpedia.org/page/Category:Airbus_aircraft",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The aircrafts from Airbus"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Airbus_aricraft"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://dbpedia.org/page/Aircraft"
+  } ]
+}, {
+  "@id" : "https://dbpedia.org/page/Category:Boeing_aircraft",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The aircrafts from Boeing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Boeing_aircraft"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://dbpedia.org/page/Aircraft"
+  } ]
+}, {
+  "@id" : "https://dbpedia.org/page/City",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The class of City"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "City"
+  } ]
+}, {
+  "@id" : "https://dbpedia.org/page/Country",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The class of a Country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Country"
+  } ]
+}, {
+  "@id" : "https://dbpedia.org/page/Passenger",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The class of Passenger"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Passenger"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid3"
+  } ]
+} ]
