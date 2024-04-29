@@ -19,7 +19,7 @@
     "id" : "11",
     "type" : "owl:Class"
   }, {
-    "id" : "13",
+    "id" : "16",
     "type" : "owl:Class"
   }, {
     "id" : "12",
@@ -52,7 +52,7 @@
     "id" : "35",
     "type" : "owl:Class"
   }, {
-    "id" : "16",
+    "id" : "15",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "1",
@@ -165,7 +165,7 @@
       "undefined" : "A review with a rating between 4 and 6."
     },
     "attributes" : [ "external" ],
-    "id" : "13",
+    "id" : "16",
     "superClasses" : [ "14" ]
   }, {
     "iri" : "https://dbpedia.org/page/Aircraft",
@@ -281,7 +281,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "16",
+    "id" : "15",
     "label" : {
       "IRI-based" : "string"
     }
@@ -396,7 +396,7 @@
         "IRI-based" : "Review2"
       }
     } ],
-    "subClasses" : [ "13", "40", "43", "34" ],
+    "subClasses" : [ "16", "40", "43", "34" ],
     "comment" : {
       "undefined" : "The class of a Flight Review"
     },
@@ -524,7 +524,7 @@
     "id" : "0",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "15",
+    "id" : "13",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "17",
@@ -673,7 +673,7 @@
   }, {
     "iri" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology./has_comment",
     "baseIri" : "http://www.semanticweb.org/atoma/ontologies/2024/3/Airline-Satisfacción-Surveys-Ontology.",
-    "range" : "16",
+    "range" : "15",
     "label" : {
       "IRI-based" : "has_comment",
       "undefined" : "has_comment"
@@ -683,7 +683,7 @@
       "undefined" : "The comment of a review."
     },
     "attributes" : [ "external", "datatype" ],
-    "id" : "15"
+    "id" : "13"
   }, {
     "range" : "3",
     "domain" : "7",
@@ -758,12 +758,12 @@
     "attributes" : [ "external", "object" ],
     "id" : "36"
   }, {
-    "range" : "13",
+    "range" : "16",
     "domain" : "34",
     "attributes" : [ "anonymous", "object" ],
     "id" : "37"
   }, {
-    "range" : "13",
+    "range" : "16",
     "domain" : "40",
     "attributes" : [ "anonymous", "object" ],
     "id" : "39"
@@ -773,7 +773,7 @@
     "attributes" : [ "anonymous", "object" ],
     "id" : "41"
   }, {
-    "range" : "13",
+    "range" : "16",
     "domain" : "43",
     "attributes" : [ "anonymous", "object" ],
     "id" : "42"
@@ -949,7 +949,7 @@
     "id" : "22"
   }, {
     "range" : "14",
-    "domain" : "13",
+    "domain" : "16",
     "attributes" : [ "anonymous", "object" ],
     "id" : "66"
   }, {
